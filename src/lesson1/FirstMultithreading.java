@@ -1,4 +1,4 @@
-import java.util.SortedMap;
+package lesson1;
 
 public class FirstMultithreading {
     public static void main(String[] args) throws InterruptedException{
@@ -25,7 +25,7 @@ class Runner implements Runnable{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("Hello from MyThread" + i + "Hi");
+            System.out.println("Hello from lesson1.MyThread" + i + "Hi");
         }
     }
 }
@@ -39,7 +39,7 @@ class MyThread extends Thread{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("Hello from MyThread" + i);
+            System.out.println("Hello from lesson1.MyThread" + i);
         }
     }
 }
